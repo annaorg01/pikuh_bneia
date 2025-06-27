@@ -1,0 +1,17 @@
+{
+  "name": "my-static-website",
+  "version": "1.0.0",
+  "description": "A simple static website.",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo \"No start script defined. Serve index.html directly.\"",
+    "build": "echo \"No build process required for this static site.\""
+  },
+  "keywords": [
+    "static",
+    "website",
+    "netlify"
+  ],
+  "author": "",
+  "license": "ISC"
+}
