@@ -1,0 +1,146 @@
+/* General body styles */
+body {
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f6;
+  color: #333;
+  direction: rtl; /* Right-to-left for Hebrew */
+  line-height: 1.6;
+}
+
+/* Main container for the application */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Header styles */
+header {
+  background-color: #007bff; /* A vibrant blue, adjust as needed */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+header h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.2em;
+  font-weight: 700;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+#current-date {
+  font-weight: 500;
+}
+
+/* Cards container styles */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 10px 0; /* Added some padding for visual separation */
+}
+
+/* Individual card styles (placeholder) */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%; /* Default to full width for smaller screens */
+  max-width: 350px; /* Max width for larger screens */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  text-align: right; /* Text alignment for card content */
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #0056b3; /* Darker blue for card titles */
+  font-weight: 500;
+}
+
+.card p {
+  font-size: 0.95em;
+  color: #555;
+}
+
+/* Map container styles */
+.map-container {
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden; /* Ensures the map corners are also rounded if map itself is square */
+}
+
+#map {
+  width: 100%;
+  height: 450px; /* Default height for the map */
+  background-color: #e9e9e9; /* Placeholder background */
+}
+
+#map p { /* Styling for the "Loading map..." text */
+  text-align: center;
+  padding-top: 150px; /* Adjust to vertically center */
+  font-size: 1.2em;
+  color: #777;
+}
+
+
+/* Footer styles */
+footer {
+  background-color: #343a40; /* Dark grey for footer */
+  color: #f8f9fa; /* Light text for footer */
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+  font-size: 0.9em;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+  header p {
+    font-size: 1em;
+  }
+  .card {
+     max-width: 90%; /* Allow cards to take more width on smaller screens */
+  }
+  #map {
+    height: 350px; /* Adjust map height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+  header {
+    padding: 15px;
+  }
+  header h1 {
+    font-size: 1.6em;
+  }
+  #map {
+    height: 300px; /* Further adjust map height */
+  }
+}
