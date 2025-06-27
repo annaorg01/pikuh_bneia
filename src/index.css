@@ -1,0 +1,27 @@
+/* src/index.css */
+
+/* Apply a basic reset and ensure body takes up full viewport height if needed. */
+/* The main styling will be in App.css */
+
+body {
+  margin: 0;
+  font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  direction: rtl; /* Ensure RTL is set globally */
+  background-color: #f4f7f6; /* Match App.css body background for consistency */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  /* Optional: If you want the #root to fill the viewport height, e.g., for sticky footers */
+  /* min-height: 100vh; */
+  /* display: flex; */
+  /* flex-direction: column; */
+}
